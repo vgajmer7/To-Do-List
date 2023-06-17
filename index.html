@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 400px;
+            color: darkgreen;
+        }
+        h1 {
+            text-align: center;
+            color: #12AD2B;
+            font-family: 'Lemonada';
+            text-transform: uppercase;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .task-item {
+            display: flex;
+            align-items: center;
+        }
+        .task-item input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>To Do List</h1>
+        <div id="add-item">
+            <input type="text" id="new-task" placeholder="Enter a task">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="add-task-btn">
+                Add Task
+            </button>
+        </div>
+        <div id="todo">
+            <h5>Todo Tasks</h5>
+            <ul id="incomplete-tasks"></ul>
+        </div>
+        <div id="completed">
+            <h5>Completed Tasks</h5>
+            <ul id="completed-tasks"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+<img src="images.png" alt="Logo" style="width: 200px; position: fixed; left: 0; bottom: 0;" />
+
+</body>
+</html>

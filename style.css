@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Lemonada');
+
+html, body {
+    background-image: url('wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #12AD2B;
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
